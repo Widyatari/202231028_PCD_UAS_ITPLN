@@ -1,1 +1,2 @@
-# 202231028_PCD_UAS_ITPLN
+Nama : Widya Tari
+Nim : 202231028
