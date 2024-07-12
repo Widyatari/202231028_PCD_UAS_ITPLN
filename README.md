@@ -90,3 +90,68 @@ Ini adalah blok kode yang mengandung beberapa langkah untuk memproses dan mengan
    - plt.title('Canny Edge Detection'): Ini menambahkan judul 'Canny Edge Detection' pada subplot kedua.
    - plt.axis('off'): Ini mengatur agar sumbu (axis) pada subplot kedua tidak ditampilkan.
 
+ #plt.subplot(2, 3, 4)
+ #plt.imshow(image_rgb)
+ #plt.title('Original Image')
+ #plt.axis('off')
+
+ #plt.subplot(2, 3, 5)
+ #plt.imshow(edges, cmap='gray')
+ #plt.title('Canny Edge Detection')
+ #plt.axis('off')
+
+ #plt.subplot(2, 3, 6)
+ #plt.imshow(image_contours)
+ #plt.title('Contours Detection')
+ #plt.axis('off')
+Syntax tersebut adalah penggunaan dari modul matplotlib.pyplot untuk membuat visualisasi multiplot dalam satu gambar (figure) dengan menggunakan subplot.
+*plt.subplot(2, 3, 4)* :
+   - plt.subplot digunakan untuk menentukan posisi subplot dalam sebuah grid.
+   - Angka-angka 2, 3, 4 mewakili:
+     - 2: Jumlah baris subplot (total baris dalam grid)
+     - 3: Jumlah kolom subplot (total kolom dalam grid)
+     - 4: Indeks subplot (urutan subplot dalam grid, dihitung dari kiri ke kanan, atas ke bawah)
+   - Jadi, subplot ini akan ditempatkan di baris pertama (dari 2 baris total), kolom kedua (dari 3 kolom total), dan akan menjadi subplot keempat dalam grid tersebut.
+
+*plt.imshow(image_rgb)* :
+   - plt.imshow digunakan untuk menampilkan gambar.
+   - image_rgb adalah variabel yang berisi gambar dalam format RGB yang akan ditampilkan.
+
+*plt.title('Original Image')* :
+   - plt.title digunakan untuk menambahkan judul pada subplot.
+   - Judul subplot ini adalah "Original Image".
+
+*plt.axis('off')* :
+   - plt.axis('off') digunakan untuk menghilangkan sumbu (axis) pada gambar.
+   - Hal ini berguna untuk menghapus label sumbu x dan y serta penanda grid.
+
+*plt.subplot(2, 3, 5)* :
+   - Ini adalah subplot kedua dalam grid yang sama.
+   - Akan ditempatkan di baris pertama, kolom ketiga, dan menjadi subplot kelima dalam grid.
+
+*plt.imshow(edges, cmap='gray')* :
+   - Menampilkan gambar edges dengan menggunakan skema warna 'gray' (grayscale).
+   - edges adalah gambar yang telah diproses dengan deteksi tepi Canny atau metode serupa, yang umumnya menghasilkan gambar dalam format grayscale.
+
+*plt.title('Canny Edge Detection')* :
+   - Memberikan judul "Canny Edge Detection" pada subplot ini.
+
+*plt.axis('off')* :
+   - Kembali menghilangkan sumbu pada gambar ini.
+
+*plt.subplot(2, 3, 6)* :
+   - Ini adalah subplot ketiga dalam grid yang sama.
+   - Akan ditempatkan di baris pertama, kolom keenam, dan menjadi subplot keenam dalam grid.
+
+*plt.imshow(image_contours)* :
+    - Menampilkan gambar image_contours.
+    - image_contours mungkin berisi gambar yang telah diproses untuk menunjukkan deteksi kontur objek dalam gambar.
+
+*plt.title('Contours Detection')* :
+    - Memberikan judul "Contours Detection" pada subplot ini.
+
+*plt.axis('off')* :
+    - Menghilangkan sumbu pada gambar ini.
+
+Ringkasan:
+Syntax ini secara berurutan membuat tiga subplot dalam satu grid berukuran 2 baris dan 3 kolom. Setiap subplot menampilkan gambar yang berbeda dengan judul yang sesuai dan sumbu yang disembunyikan. Subplot pertama menampilkan gambar asli (RGB), subplot kedua menampilkan hasil deteksi tepi dengan skema warna grayscale, dan subplot ketiga menampilkan hasil deteksi kontur.
